@@ -1,6 +1,6 @@
 # ESP32_AWS_Setup
 
-## This is helper to setup ESP32-AWS service and run first MQTT Test. It takes two evening to examine and googling to overcome all issues
+## This is helper to setup ESP32-AWS service and run first MQTT Test. It have had took two evening to examine and googling to overcome all issues
 
 ## Prerequires:
 * Ubuntu 18.04
