@@ -58,8 +58,26 @@ Any ESP32 board is OK. My board named **ESP32-WROOM32-D**. But at this setup we 
 >   "wifi_security":"eWiFiSecurityWPA2"
 >}
 >
-
-
+* Run:
+> /home/user/esp/AWS/amazon-freertos/tools/aws_config_quick_start$ python SetupAWS.py setup
+> 
+* Build finally again from root **/home/user/esp/AWS/amazon-freertos/** folder:
+> idf.py -p /dev/ttyUSB0 flash monitor 2>&1 | tee log1.txt
+>
+    * If build passed then test started. Note - Quit: Ctrl+]
+    * Netx time start without build:
+> idf.py -p /dev/ttyUSB0 monitor
+> 
+* This is Test code:
+> /home/user/esp/AWS/amazon-freertos/demos/coreMQTT/mqtt_demo_mutual_auth.c
+>
+* Test in details described there [coreMQTT mutual authentication demo](https://docs.aws.amazon.com/freertos/latest/userguide/mqtt-demo-ma.html)
+* How to setup AWS console to see MQTT messages there: [View MQTT messages with the AWS IoT MQTT client](https://docs.aws.amazon.com/iot/latest/developerguide/view-mqtt-messages.html)
+    * Note - symbol # at topic help to see all topics
+* Good source to see similar job here:
+    * [Back to Basics: AWS IoT C SDK](http://blog.herlein.com/post/aws-iot-c-sdk/)
+    * [Progress on ESP32 and FreeRTOS](http://blog.herlein.com/post/freertos-helper-esp32/)
+    * [Amazon FreeRTOS ESP32 Helper](https://github.com/gherlein/esp32-amazon-freertos-helper)
 
 
 
